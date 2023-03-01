@@ -1,4 +1,6 @@
-*{
+
+
+* {
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -12,12 +14,19 @@
 
 
 
-.nav--navigation  {
-  
+.nav--navigation {
+
   display: flex;
   list-style: none;
   justify-content: space-between;
 
+}
+
+.nav--logo h1{
+  font-family: 'Bebas Neue', cursive;
+  cursor: pointer;
+  font-size: 1.8em;
+  letter-spacing: 3px;
 }
 
 .nav--navigation li {
@@ -29,46 +38,138 @@
 
 
 
-.logo{
+.logo {
   height: 30px;
+  cursor: pointer;
 }
 
-.linkedinlogo{
+.linkedinlogo {
   border-radius: 5px;
 }
 
 .title {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
-.title h2{
-  color:#30dfff;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+.title.dark {
+  color: #dddddd;
 }
 
-.title h1 {
-  font-weight: 400;
-  font-size: 4em;
+.title h2 {
+  color: #6096B4;
+  margin-bottom: 10px;
+ letter-spacing: 3px;
+}
+
+.title h1{
+  margin-left: -3px;
+  font-size: 4.3em;
   margin-bottom: 40px;
+  letter-spacing: 3px;
 }
 
-.title p{
+.title p {
   font-weight: 200;
   font-size: 2em;
+  line-height: 1.7em;
+}
+
+.title--link {
+  display: inline-block;
+  color: inherit;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #6096B4;
+  text-underline-offset: 10px;
 }
 
 .projects--wrapper {
+  padding: 40px 0;
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .project {
-  
+  cursor: pointer;
   width: 100%;
   height: 360px;
-  background-color: black;
-  border-radius: 20px;
+  background-color: rgb(209, 209, 209);
+  border-radius: 12px;
+  color: white;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
 }
+
+.project h1 {
+  font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 4;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 12px;
+  background: #00000020;
+  width: 100%;
+  height: 100%;
+  transition: 200ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding: 20px;
+}
+
+.overlay--contentCover{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.overlay--content{
+  position: absolute;
+  bottom: 0;
+}
+
+.overlay--text{
+  margin-bottom: 20px;
+}
+
+.badge {
+  margin: 20px 20px 0 0;
+  display: inline-block;
+  font-size: 1em;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.badge.JavaScript{
+  background-color: #f1e05a;
+}
+
+.badge.HTML{
+  background-color: #e34c26;
+}
+
+.badge.CSS{
+  background-color: #563d7c;
+}
+
+.badge.PHP{
+  background-color: #4f5d95;
+}
+
+
+
+
 

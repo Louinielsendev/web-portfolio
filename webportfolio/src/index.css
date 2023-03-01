@@ -4,9 +4,21 @@
   padding: 0;
 }
 
-:root{
+.App{
+  transition: 400ms;
+}
+
+.App.dark{
+  background-color: black;
+  color: #dddddd;
+  
+}
+
+
+
+.Main{
   max-width: 1250px;
   margin-right: auto;
   margin-left: auto;
-  padding: 40px;
+  padding: 40px 50px;
 }

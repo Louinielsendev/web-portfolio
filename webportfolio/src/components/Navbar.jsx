@@ -4,11 +4,13 @@ import linkedinLogo from '../assets/linkedin.svg'
 import linkedinLogoWhite from '../assets/linkedin-white.svg'
 import moon from '../assets/moon.svg'
 import sun from '../assets/sun.svg'
+import { useState } from 'react'
 
 
 import '../App.css'
 
 export default function Navabar(props) {
+    
     
     return (
         <div className='nav'>
@@ -16,7 +18,7 @@ export default function Navabar(props) {
                 <h1>LOUIDEV</h1>
             </div>
             <ul className="nav--navigation">
-                <li>Projects</li>
+               
                 <li>
                     <a target='_blank' href="https://github.com/Louinielsendev"><img className='logo'src={props.darkMode ? githubLogoWhite : githubLogo} alt="" /></a>
                 </li>
@@ -27,6 +29,7 @@ export default function Navabar(props) {
                     <img className='logo' src={props.darkMode ? moon : sun} onClick={props.toggleDarkMode} alt="" />
                 </li>
             </ul>
+
         </div>
     )
 }

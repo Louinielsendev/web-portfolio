@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './App.css'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
 import Project from './components/Project'
 import projectData from './projectData'
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,6 +14,9 @@ function App() {
     setDarkMode(prevMode => !prevMode)
 
   }
+
+  
+
   const projects = projectData.map(project => {
     return (
       <Project
@@ -22,6 +26,7 @@ function App() {
         url={project.url}
         description={project.description}
         verktyg={project.verktyg}
+        order={project.order}
        />
     )
   })
@@ -30,7 +35,7 @@ function App() {
       <div className='Main'>
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Title darkMode={darkMode} />
-        <h2>Projects</h2>
+        <h2 className='projects--title'>Mina projekt</h2>
         <div className='projects--wrapper'>
           {projects}
 

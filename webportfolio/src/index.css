@@ -17,8 +17,21 @@
 
 
 .Main{
+  overflow: hidden;
   max-width: 1250px;
   margin-right: auto;
   margin-left: auto;
   padding: 40px 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .Main{
+    padding: 30px;
+  }
 }

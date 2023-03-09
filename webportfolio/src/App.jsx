@@ -27,6 +27,8 @@ function App() {
         description={project.description}
         verktyg={project.verktyg}
         order={project.order}
+        darkMode={darkMode}
+        github={project.github}
        />
     )
   })

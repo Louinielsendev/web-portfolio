@@ -54,7 +54,7 @@
 }
 
 .title {
-  padding: 150px 0;
+  padding: 110px 0;
 }
 
 .title.dark {
@@ -102,6 +102,7 @@
   width: 100%;
   justify-content: space-between;
   margin-bottom: 150px;
+  
 }
 
 .reverse--flex {
@@ -120,9 +121,22 @@
   padding-left: 0%;
 }
 
+.project--content a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.project--content a:hover {
+  text-decoration: underline; 
+  
+}
+
+
+
 
 .project--title{
   margin-bottom: 40px;
+
 }
 
 .project--desc{
@@ -191,6 +205,11 @@
     margin-bottom: 50px;
   }
 
+  .project--title{
+    font-size: 1.4em;
+    margin: 10px 0 10px 0;
+  }
+
   .project--content{
     padding-left: 0%;
     width: 100%;
@@ -229,11 +248,6 @@
 
   .logo {
     height: 25px;
-  }
-
-  .project--title{
-    font-size: 1.4em;
-    margin: 10px 0 10px 0;
   }
 
   .project--content{

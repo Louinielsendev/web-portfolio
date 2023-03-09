@@ -1,6 +1,6 @@
-import blog from './assets/blog.PNG'
-import catchFilip from './assets/catchfilip3.PNG'
-import vader from './assets/vader.PNG'
+import blog from './assets/blog.png'
+import catchFilip from './assets/catchfilip3.png'
+import vader from './assets/vader.png'
 
 export default [
     {

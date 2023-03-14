@@ -1,10 +1,13 @@
 import githubLogo from '../assets/github.svg'
 import githubLogoWhite from '../assets/github-white.svg'
-
+import blog from'../assets/blog.png'
+import catchFilip from '../assets/catchfilip3.png'
+import vader from '../assets/vader.png'
 
 import '../App.css'
 
 export default function Project(props) {
+    
     return (
         <div className={`project ${props.order ? '' : 'reverse--flex'}`} >
              <div className='project--imgWrapper'><a target="_blank" href={props.url}><img className='project--img' src={`src/assets/${props.img}`} alt="" /></a></div>

@@ -1,5 +1,8 @@
 import githubLogo from '../assets/github.svg'
 import githubLogoWhite from '../assets/github-white.svg'
+import '../assets/blog.png'
+import '../assets/catchfilip3.png'
+import '../assets/vader.png'
 
 import '../App.css'
 
